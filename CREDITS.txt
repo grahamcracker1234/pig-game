@@ -1,0 +1,4 @@
+Dice Images (https://farlands.itch.io/dice)
+Normalize.css (https://necolas.github.io/normalize.css/)
+Risque Font (https://www.1001fonts.com/risque-font.html)
+Webfont Generator (https://www.fontsquirrel.com/tools/webfont-generator)

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>Pig: a Dice Game</title>
+
+		<link rel="stylesheet" href="https://unpkg.com/normalize.css@8.0.1/normalize.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+
+		<link rel="shortcut icon" href="data:,">
+
+		<meta content="text/html;charset=utf-8" http-equiv="content-type">
+	</head>
+	<body>
+		<section id="end">
+			<h1 id="outcome"></h1>
+			<h2 id="score"></h2>
+			<h2 id="total-rounds"></h2>
+			<button id="play-again">Play Again</button>
+		</section>
+		<section id="game">
+			<div class="extra">
+				<div id="round-number"></div>
+				<div id="goal"></div>
+			</div>
+			<button id="home">Home</button>
+			<table>
+				<tr>
+					<td id="player-1-game"></td>
+					<td id="player-2-game"></td>
+				</tr>
+				<tr>
+					<td id="player-1-score"></td>
+					<td id="player-2-score"></td>
+				</tr>
+			</table>
+			<div id="temp-score-container">
+				<div>Turn Total</div>
+				<span id="temp-score"></span>
+			</div>
+			<div>
+				<img id="dice1" src="assets/img/diceRedBlank.png" alt="Blank Dice">
+				<img id="dice2" src="assets/img/diceRedBlank.png" alt="Blank Dice">
+			</div>
+			<span>
+				<button id="roll-dice">Roll Dice</button>
+				<button id="end-turn">End Turn</button>
+			</span>
+		</section>
+		<section id="title">
+			<h1>Pig: a Dice Game</h1>
+			<p>Pig is a simple dice game where players take turns rolling a die as many times as they wish, adding all the rolls to a running total but losing their gained score for the turn if they roll a 1. The first player to a predetermined total wins. In two-dice pig, rolling two 1's resets that player's score, but rolling doubles adds twice as many points to the running total.</p>
+			<form action="javascript:void(0);">
+				<table>
+					<tr>
+						<td>
+							<label for="player-1-title">Player 1</label>
+						</td>
+						<td>
+							<input id="player-1-title" type="text">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="player-2-title">Player 2</label>
+						</td>
+						<td>
+							<input id="player-2-title" type="text">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="points-to-win">Points to win</label>
+						</td>
+						<td>
+							<input id="points-to-win" type="number" value="100">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<span>Gamemode</span>
+						</td>
+						<td>
+							<label>
+								<input type="radio" id="is-classic" name="gamemode" checked="true">
+								<span class="radio">Classic</span>
+							</label>
+							<label>
+								<input type="radio" id="is-two-dice" name="gamemode">
+								<span class="radio">Two Dice</span>
+							</label>
+						</td>
+					</tr>
+				</table>
+			</form>
+			<button id="start-game" type="submit">Start Game</button>
+		</section>
+		<script src="assets/js/main.js"></script>
+	</body>
+</html>

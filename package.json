@@ -1,0 +1,19 @@
+{
+	"name": "project-1",
+	"version": "1.0.0",
+	"author": "Graham Preston",
+	"description": "First project for Principles of Software Development.",
+	"private": "true",
+	"license": "MIT",
+	"scripts": {
+		"serve": "serve",
+		"sass": "sass assets/scss/:assets/css/ --no-source-map",
+		"watch": "onchange -i 'assets/scss/**/*.scss' -- npm run sass"
+	},
+	"devDependencies": {
+		"eslint": "^7.20.0",
+		"onchange": "^7.1.0",
+		"sass": "^1.32.8",
+		"serve": "^13.0.2"
+	}
+}
